@@ -1,0 +1,38 @@
+@media all and (max-width: 767px) {
+  .wrapper {
+    padding-top: 3.75rem;
+  }
+
+  .navbar-brand,
+  .navbar-toggler {
+    z-index: 2;
+  }
+
+  .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+  }
+
+  .navbar-collapse {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    padding: 4.375rem 1rem 1rem 1rem;
+    background-color: #343a40;
+    z-index: 1;
+  }
+
+  .navbar-nav {
+    height: 100%;
+    overflow: auto;
+  }
+
+  .nav-link {
+    font-size: 1.25rem;
+  }
+}
