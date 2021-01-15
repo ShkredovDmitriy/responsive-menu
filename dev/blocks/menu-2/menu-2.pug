@@ -1,31 +1,36 @@
 .wrapper
-  nav(class="navbar navbar-dark bg-dark navbar-expand-lg fixed-top")
+  nav(class="navbar navbar-dark bg-dark navbar-expand-el")
 
     a(class="navbar-brand d-inline-flex align-items-center" href="#")
       img(src="./images/logo-bootstrap.svg" width="30" height="30" class="d-inline-block align-top" alt="" loading="lazy")
-      span.ml-2 Bootstrap
-    
-    button(class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false")
+      span.ml-2 LOGO
+
+    form.form-inline.ml-auto.mr-auto.d-none.d-sm-block
+      .input-group
+        input(class="form-control" type="search" placeholder="Search" aria-label="Search")
+        .input-group-append
+          button(class="btn btn-outline-secondary" type="submit") Search
+
+    button(class="navbar-toggler d-block" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false")
       span.navbar-toggler-icon
 
-    div(class="collapse navbar-collapse d-lg-none" id="navbarNav")
+    div(class="collapse navbar-collapse d-el-none" id="navbarNav")
       ul(class="navbar-nav")
         li.nav-item
-          a.nav-link(href="#") Home
+          form.form-inline.ml-auto.mr-auto.d-sm-none.mt-4
+            .input-group
+              input(class="form-control" type="search" placeholder="Search" aria-label="Search")
+              .input-group-append
+                button(class="btn btn-outline-secondary" type="submit") Search
         li.nav-item
-          a.nav-link(href="#") Features
+          a.nav-link(href="#") Categories
         li.nav-item
-          a.nav-link(href="#") Pricing
+          a.nav-link(href="#") Contact Us
         li.nav-item
-          a.nav-link(href="#") Reviews
+          a.nav-link(href="#") Opening Times
         li.nav-item
-          a.nav-link(href="#") About
+          a.nav-link(href="#") Top Offers
         li.nav-item
-          a.nav-link(href="#") Address
-
-      form.form-inline.ml-auto
-        input(class="form-control mr-2" type="search" placeholder="Search" aria-label="Search")
-        button(class="btn btn-outline-success my-2 my-sm-0" type="submit") Search
-
-  div.pt-5.mt-2
+          a.nav-link(href="#") Sign In    
+  
   include ../demo-content/demo-content
