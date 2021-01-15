@@ -1,0 +1,31 @@
+.wrapper
+  nav(class="navbar navbar-dark bg-dark navbar-expand-lg fixed-top")
+
+    a(class="navbar-brand d-inline-flex align-items-center" href="#")
+      img(src="./images/logo-bootstrap.svg" width="30" height="30" class="d-inline-block align-top" alt="" loading="lazy")
+      span.ml-2 Bootstrap
+    
+    button(class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false")
+      span.navbar-toggler-icon
+
+    div(class="collapse navbar-collapse d-lg-none" id="navbarNav")
+      ul(class="navbar-nav")
+        li.nav-item
+          a.nav-link(href="#") Home
+        li.nav-item
+          a.nav-link(href="#") Features
+        li.nav-item
+          a.nav-link(href="#") Pricing
+        li.nav-item
+          a.nav-link(href="#") Reviews
+        li.nav-item
+          a.nav-link(href="#") About
+        li.nav-item
+          a.nav-link(href="#") Address
+
+      form.form-inline.ml-auto
+        input(class="form-control mr-2" type="search" placeholder="Search" aria-label="Search")
+        button(class="btn btn-outline-success my-2 my-sm-0" type="submit") Search
+
+  div.pt-5.mt-2
+  include ../demo-content/demo-content
